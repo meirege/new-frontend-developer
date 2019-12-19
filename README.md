@@ -28,7 +28,7 @@ More info on the [technical details](#technical-details) and the [design details
 
 ### Image slider
 
-The image slider must contain a set of 5 images. By default only the first image is loaded. The other images are loaded on demand. The active state must be communicated via a dotted pagination.
+The image slider must contain a set of 5 images. By default only the first image is loaded. The other images are loaded on demand. The active state must be communicated via a dotted pagination. Optimize for gesture-based instead of mouse-based interactions.
 View the [mockup](#mockup) for visual reference.
 
 ### Action icons
@@ -47,9 +47,9 @@ View the [mockup](#mockup) for visual reference.
 
 ## Technical details
 
-The master branch can be used as a starter kit for the project. Cloning it and running `yarn` and `yarn start` should present you with a ready-to-go application.
+The master branch can be used as a starter kit for the project. Cloning it and running `yarn` and `yarn start` should present you with a ready-to-go application. Use the _src_ and _public_ folder to edit/add code. Output will be generated to the _build_ folder.
 
-**Note**: the package.json includes a predefined set of dependencies. **Feel free to add or remove packages** as needed. Use as many open source components as you like. Update the webpack.config.js if you need to. Use _CSS_, _Sass_ or _CSS Modules_; whatever you like.
+**Note**: the package.json includes a predefined set of dependencies. **Feel free to add or remove packages** as needed. Use as many open source components as you like. Update the webpack.config.js if you need to. Use _CSS_, _Sass_ or _CSS Modules_ (whatever you like).
 
 ### Prerequisites
 
@@ -102,7 +102,7 @@ Action colors:
 - Email: #3a3e40
 - Clipboard: #d2d5d6
 
-**Note**: we're counting on your creativity to fill in the gaps for the hover, focus and active states
+**Note**: we're counting on your creativity to fill in the gaps for the focus and active states
 
 ### Typography
 
