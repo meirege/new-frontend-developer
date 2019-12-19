@@ -2,7 +2,7 @@
 
 > When you are finished with your version, please host this somewhere on Github and share your link
 
-This is an exercise to test your knowledge of **HTML**, **CSS** and **JavaScript**. You shouldn't spend more than 3 hours on it. If you don't finish the exercise before the set time that's not a problem as long as you can write down why and how you would finish the exercise.
+This is an exercise to test your knowledge of **HTML**, **CSS** and **JavaScript**. You shouldn't spend more than 2 hours on it. If you don't finish the exercise before the set time that's not a problem as long as you can write down why and how you would finish the exercise.
 
 Don't worry to much about the code you produce, there is **no correct solution**. We will have a chat about this exercise anyway so you'll have time to talk about the shortcuts you made.
 
