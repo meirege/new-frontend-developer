@@ -1,24 +1,21 @@
-@font-face {
-  font-family: 'Halant';
-  font-weight: 600;
-  src: url('./halant-600.woff2') format('woff2'),
-    url('./halant-600.woff') format('woff');
-}
+@import 'sass/colors';
+@import 'sass/typography';
+@import 'sass/header';
+@import 'sass/container';
+@import 'sass/author';
+@import 'sass/social';
+@import 'sass/location';
+@import 'sass/article';
+@import 'sass/mobile-menu';
 
-@font-face {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  src: url('./open-sans-400.woff2') format('woff2'),
-    url('./open-sans-400.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-weight: 700;
-  src: url('./open-sans-700.woff2') format('woff2'),
-    url('./open-sans-700.woff') format('woff');
+html {
+  font-size: 20px;
 }
 
 body {
   margin: 0;
+  font-family: 'Georgia';
+  font-weight: 400;
+  font-size: .8rem;
+  line-height: 1.625;
 }

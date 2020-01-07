@@ -1,0 +1,28 @@
+header.header {
+  .main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid $grey;
+
+    a {
+      font-family: 'Halant';
+      font-size: .8rem;
+      font-weight: 500;
+      line-height: 1.15;
+      text-decoration: none;
+      color: $black;
+    }
+  }
+
+  .mobile-menu-button {
+    border: 0;
+    background: none;
+    font-size: 1.5rem;
+
+    span {
+      font-size: 0;
+    }
+  }
+}

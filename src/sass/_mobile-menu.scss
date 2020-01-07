@@ -1,0 +1,15 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -15rem;
+  width: 15rem;
+  height: 100%;
+  background: $white;
+  border-left: 1px solid $grey;
+  z-index: 1000;
+  transition: 1s right;
+
+  &[aria-hidden="false"] {
+    right: 0;
+  }
+}

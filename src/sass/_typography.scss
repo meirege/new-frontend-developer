@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Halant';
+  font-weight: 600;
+  src: url('./halant-600.woff2') format('woff2'),
+    url('./halant-600.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  src: url('./open-sans-400.woff2') format('woff2'),
+    url('./open-sans-400.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  src: url('./open-sans-700.woff2') format('woff2'),
+    url('./open-sans-700.woff') format('woff');
+}
+
+h1 {
+  font-family: 'Halant';
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.15;
+}

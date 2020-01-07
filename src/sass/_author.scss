@@ -1,0 +1,26 @@
+.author {
+  display: flex;
+  align-items: center;
+  padding: .5rem 0;
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+
+  img {
+    max-width: 2rem;
+    margin-right: .5rem;
+    border-radius: 100%;
+  }
+
+  .author--name,
+  .author--publish-date {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: .6rem;
+    line-height: 1.45;
+    color: $grey;
+  }
+
+  .author--publish-date {
+    font-weight: 400;
+  }
+}

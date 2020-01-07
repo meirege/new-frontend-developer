@@ -1,0 +1,67 @@
+ul.social {
+  display: flex;
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: .5rem 0;
+  border-bottom: 1px solid $grey;
+
+  li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    margin-right: .5rem;
+    border-radius: 100%;
+    text-decoration: none;
+    font-size: .8rem;
+    background: $black;
+    color: $white;
+
+    &.social-facebook {
+      background: $facebook;
+
+      &:focus,
+      &:hover {
+        background: darken($facebook, 20%);
+      }
+    }
+
+    &.social-twwitter {
+      background: $twitter;
+
+      &:focus,
+      &:hover {
+        background: darken($twitter, 20%);
+      }
+    }
+
+    &.social-whatsapp {
+      background: $whatsapp;
+
+      &:focus,
+      &:hover {
+        background: darken($whatsapp, 20%);
+      }
+    }
+
+    &.social-email {
+      background: $email;
+
+      &:focus,
+      &:hover {
+        background: darken($email, 20%);
+      }
+    }
+
+    &.social-copy {
+      background: $clipboard;
+      color: $grey;
+
+      &:focus,
+      &:hover {
+        background: darken($clipboard, 20%);
+      }
+    }
+  }
+}
