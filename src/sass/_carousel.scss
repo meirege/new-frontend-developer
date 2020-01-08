@@ -1,0 +1,12 @@
+.carousel {
+  margin-bottom: 2rem;
+
+  .dot {
+    margin: .2rem;
+    background-color: $grey;
+
+    &.is-selected {
+      background-color: $brand;
+    }
+  }
+}

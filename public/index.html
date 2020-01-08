@@ -11,18 +11,21 @@
     <title>Noordhollands Dagblad</title>
 
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
   </head>
   <body>
-    <div class="container">
+    <div id="container" class="container">
+
         <!-- Header start -->
       <header class="header">
         <div class="main-menu">
           <a href="javascript:(void);" title="Terug"><i class="fa fa-angle-left"></i> Terug</a>
-          <img src="logo.svg" alt="Noordhollands Dagblad" height="26" width="208" />
-          <button class="mobile-menu-button"><i class="fa fa-bars"></i><span>Opem menu</span></button>
+          <img src="logo.svg" alt="Noordhollands Dagblad" class="logo" />
+          <button aria-controls="mobile-menu" id="mobile-menu-button" class="mobile-menu-button"><i class="fa fa-bars"></i><span>Opem menu</span></button>
         </div>
-        <div class="mobile-menu" aria-hidden="true">
+        <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+          <button aria-controls="mobile-menu" id="mobile-menu-close-button" class="mobile-menu-close-button"><i class="fa fa-times"></i><span>Sluit menu</span></button>
           <ul>
             <li>Home</li>
             <li>News</li>
@@ -38,6 +41,17 @@
         <header>
           <h1>Jan Blokhuijsen met achtervolgingsploeg buiten olympische finale</h1>
 
+          <div class="carousel">
+            <div class="carousel-cell">
+              <img class="carousel-cell-image"
+                data-flickity-lazyload="image1.jpg" />
+            </div>
+            <div class="carousel-cell">
+              <img class="carousel-cell-image"
+                data-flickity-lazyload="image2.jpg" />
+            </div>
+          </div>
+
           <div class="author">
             <img src="avatar.jpg" alt="Pieter van den Hoogenband" />
 
@@ -48,12 +62,11 @@
           </div>
 
           <ul class="social">
-            <li><a href="#facebook" class="social-facebook" title="Deel dit artiekel op Facebook."><i class="fa fa-facebook" aria-label="Deel dit artiekel op Facebook."></i></a></li>
-            <li><a href="#twitter" class="social-twitter"  title="Deel dit artiekel op Twitter."><i class="fa fa-twitter" aria-label="Deel dit artiekel op Twitter."></i></a></li>
-            <li><a href="#whatsapp" class="social-whatsapp" title="Deel dit artiekel op Whatsapp."><i class="fa fa-whatsapp" aria-label="Deel dit artiekel op Whatsapp."></i></a></li>
-            <li><a href="#email" class="social-email" title="Verstuur dit artiekel via mail."><i class="fa fa-envelope" aria-label="Verstuur dit artiekel via mail."></i></a></li>
+            <li><a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.noordhollandsdagblad.nl%2Fcnt%2Fdmf20180924_27896251%2Fjan-blokhuijsen-met-achtervolgingsploeg-buiten-olympische-finale" class="social-facebook" title="Deel dit artiekel op Facebook."><i class="fa fa-facebook" aria-label="Deel dit artiekel op Facebook."></i></a></li>
+            <li><a href="https://twitter.com/intent/tweet?text=Jan%20Blokhuijsen%20met%20achtervolgingsploeg%20buiten%20olympische%20finale&url=https%3A%2F%2Fwww.noordhollandsdagblad.nl%2Fcnt%2Fdmf20180924_27896251%2Fjan-blokhuijsen-met-achtervolgingsploeg-buiten-olympische-finale&via=nhdagblad" class="social-twitter"  title="Deel dit artiekel op Twitter."><i class="fa fa-twitter" aria-label="Deel dit artiekel op Twitter."></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?text=Jan%20Blokhuijsen%20met%20achtervolgingsploeg%20buiten%20olympische%20finale%20%E2%80%93%20via%20https%3A%2F%2Fwww.noordhollandsdagblad.nl%2Fcnt%2Fdmf20180924_27896251%2Fjan-blokhuijsen-met-achtervolgingsploeg-buiten-olympische-finale" class="social-whatsapp" title="Deel dit artiekel op Whatsapp."><i class="fa fa-whatsapp" aria-label="Deel dit artiekel op Whatsapp."></i></a></li>
+            <li><a href="mailto:?subject=Jan Blokhuijsen met achtervolgingsploeg buiten olympische finale&body=https://www.noordhollandsdagblad.nl/cnt/dmf20180924_27896251/jan-blokhuijsen-met-achtervolgingsploeg-buiten-olympische-finale" class="social-email" title="Verstuur dit artiekel via mail."><i class="fa fa-envelope" aria-label="Verstuur dit artiekel via mail."></i></a></li>
             <li><a href="#copy" class="social-copy" title="Kopieer de link van dit bestand."><i class="fa fa-link" aria-label="Kopieer de link van dit bestand."></i></a></li>
-
           </ul>
           <div class="location">
             Alkmaar
@@ -76,6 +89,8 @@
       </article>
       <!-- Article end -->
     </div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 
 

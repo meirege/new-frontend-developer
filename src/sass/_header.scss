@@ -3,7 +3,7 @@ header.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: .5rem 0;
     border-bottom: 1px solid $grey;
 
     a {
@@ -20,9 +20,14 @@ header.header {
     border: 0;
     background: none;
     font-size: 1.5rem;
+    cursor: pointer;
 
     span {
       font-size: 0;
     }
+  }
+
+  .logo {
+    max-width: 9rem;
   }
 }

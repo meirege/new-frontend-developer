@@ -15,7 +15,6 @@ ul.social {
     border-radius: 100%;
     text-decoration: none;
     font-size: .8rem;
-    background: $black;
     color: $white;
 
     &.social-facebook {
@@ -27,7 +26,7 @@ ul.social {
       }
     }
 
-    &.social-twwitter {
+    &.social-twitter {
       background: $twitter;
 
       &:focus,
