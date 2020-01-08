@@ -25,12 +25,10 @@ function toggleMenu() {
  * Add event listeners.
  */
 mobileMenuCloseButton.addEventListener('click', function(e) {
-  console.log('close');
   toggleMenu();
 });
 
 mobileMenuButton.addEventListener('click', function(e) {
-  console.log('open');
   toggleMenu();
 });
 
@@ -47,21 +45,24 @@ var flkty = new Flickity( elem, {
 
 // Copy to clipboard
 var copyButton = document.querySelector('.social-copy');
+var copyConfirmation = document.querySelector('.copy-confirmation');
 
 copyButton.addEventListener('click', function(e) {
-  console.log('click');
   var url = window.location.href;
 
-  var input = document.createElement('input');
-  input.setAttribute("type", "hidden");
-  input.setAttribute("name", "hidden_copy");
-  input.setAttribute("value", "hidden_copy");
-  input.setAttribute("id", "hidden_copy");
-  document.body.appendChild(input);
+  var tempInput = document.createElement("input");
+  tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+  tempInput.value = url;
+  document.body.appendChild(tempInput);
+  tempInput.select();
 
-  console.log(document.getElementById('hidden_copy'));
+  var success = document.execCommand("copy");
+  if (success) {
+    copyConfirmation.classList.add('js-visible');
+    setTimeout(function(){
+      copyConfirmation.classList.remove('js-visible');
+    }, 1500);
+  }
 
-  var hiddenCopyField = document.getElementById('hidden_copy');
-  hiddenCopyField.select();
-  document.execCommand('copy');
+  document.body.removeChild(tempInput);
 });

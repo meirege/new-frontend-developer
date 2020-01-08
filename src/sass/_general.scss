@@ -1,0 +1,7 @@
+button,
+a {
+  &:focus {
+    outline: 2px solid $brand;
+    outline-offset: .2rem;
+  }
+}
